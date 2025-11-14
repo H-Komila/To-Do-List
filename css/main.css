@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=DM+Serif+Display:ital@0;1&family=Danfo&family=Diplomata&family=DynaPuff:wght@400..700&family=Fascinate&family=Fascinate+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Luckiest+Guy&family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Paprika&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rosarivo:ital@0;1&family=Rubik+Beastly&family=Rubik+Dirt&family=Rubik+Gemstones&family=Rubik+Puddles&family=Schoolbell&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body{
+    background-image: url(../images/rasm.png);
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+     min-height: 100vh;   
+    height: auto;
+    overflow: hidden;
+   
+}
+html{
+   overflow: hidden;
+}
+.title{
+     font-weight: 500;
+  font-family: DynaPuff;
+  letter-spacing: 1px;
+  font-size: 60px;
+  color: antiquewhite;
+   text-shadow:
+          0 0 10px #ffff,
+          0 0 20px #ffff,
+          0 0 30px #ffff;
+}
+#userList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f8f88a;
+  text-align: left;
+   width: 800px;
+   padding: 15px 12px;
+  height: auto;
+  margin: 8px 0;
+  border-radius: 10px;
+  font-weight: 400;
+  font-family: Luckiest Guy;
+  letter-spacing: 1px;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+@keyframes colorfulShadow {
+        0% {
+            box-shadow: 0 0 10px #0051ff, 0 0 20px #0051ff;
+        }
+        25% {
+            box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00fb;
+        }
+        50% {
+            box-shadow: 0 0 20px #00b3ff, 0 0 40px #00b3ff;
+        }
+        75% {
+            box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
+        }
+        100% {
+            box-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00;
+        }
+    }
+#userList li:hover {
+   animation: colorfulShadow 3.5s infinite alternate;
+  color: #fff;
+}
+@keyframes rainbow {
+  to {
+    background-position: 400% center;
+  }
+}
+
+#userList li span {
+  flex: 1;
+}
+
+#userList li button {
+  background: #ff4d4d;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+#userList li button i {
+  pointer-events: none;
+}
+
+#userList li button:hover {
+  background: #d90000;
+}
+.list{
+  background: #f8f8f886;
+  padding: 20px 12px;
+  width: 700px;
+  height: auto;
+  margin: 8px 0;
+  border-radius: 10px;
+  font-weight: 400;
+  font-family: Luckiest Guy;
+  font-size: 18px;
+  border: 1px solid #ddd;
+   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.list {
+    height: auto;
+    min-height: 50px;
+    padding: 10px 20px;
+    resize: vertical;
+}
+
+.list:focus {
+    outline: none;
+    border-color: #2676f6;
+    box-shadow: 0 8px 15px rgba(38, 112, 231, 0.625);
+    transform: translateY(-4px); 
+}
+.btn{
+    letter-spacing: 2px;
+    appearance: none;
+    background: #f8f8f87c;
+  padding: 20px 12px;
+  width: 120px;
+  margin: 8px 0;
+  border-radius: 10px;
+  font-weight: 400;
+  font-family: Luckiest Guy;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  text-transform: uppercase;
+  outline: none;
+  transition: all 0.15s ease, box-shadow 0.15s ease;
+}
+.btn:hover {
+    background-image: url(../images/iiii.png);
+    background-size: cover;
+    background-repeat: repeat;
+    box-shadow: 4px 4px 0 2px #000;
+    transform: translate(-2px, -2px);
+}
+
+.btn:active {
+    box-shadow: inset 2px 2px 6px #000, 0 0 0 2px #000;
+    transform: translate(2px, 2px);
+}
+.form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    left: 20px;
+}
+
+.box {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+}
+@media (max-width: 576px) {
+    body{
+        overflow-x: hidden;
+    }
+    .title{
+  font-size: 30px;
+  text-align: center;
+}
+#userList li {
+   width: 300px;
+   padding: 10px 10px;
+  height: auto;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.list{
+  padding: 10px 10px;
+  width: 220px;
+  height: auto;
+  font-size: 15px;
+}
+.btn{
+  padding: 20px 10px;
+  width: 60px;
+  font-size: 18px;
+}
+.box{
+    position: relative;
+    right: 30px;
+}
+}
