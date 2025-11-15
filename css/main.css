@@ -8,11 +8,12 @@ body{
     width: 100%;
      min-height: 100vh;   
     height: auto;
-    overflow: hidden;
-   
+    overflow-x: hidden; 
+    overflow-y: auto;   
 }
+
 html{
-   overflow: hidden;
+    overflow-x: hidden;
 }
 .title{
      font-weight: 500;
@@ -21,9 +22,10 @@ html{
   font-size: 60px;
   color: antiquewhite;
    text-shadow:
+          0 0 5px #ffff,
           0 0 10px #ffff,
-          0 0 20px #ffff,
-          0 0 30px #ffff;
+          0 0 15px #ffff;
+    
 }
 #userList li {
   display: flex;
@@ -42,7 +44,6 @@ html{
   font-size: 20px;
   border: 1px solid #ddd;
   text-transform: uppercase;
-  margin-top: 50px;
 }
 @keyframes colorfulShadow {
         0% {
@@ -151,10 +152,12 @@ html{
 .form{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     position: relative;
     left: 20px;
+    
+
 }
 
 .box {
@@ -164,12 +167,17 @@ html{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 50px;
+  
 }
 @media (max-width: 576px) {
-    body{
-        overflow-x: hidden;
-    }
+  body{
+    overflow-x: hidden;
+    overflow-y: auto;  
+}
+
+html{
+    overflow-x: hidden;
+}
     .title{
   font-size: 30px;
   text-align: center;
